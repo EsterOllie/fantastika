@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2? family= Dela+Gothic+One & family= Fuggles & family= Martian+Mono:wght@200;700 & family= Mooli & family= Poppins:ital,wght@1.500 & family= Roboto+Serif:opsz,wght@8..144.600 & family= Roboto:wght@300 & display=swap');
+*{
+    margin : 0;
+    border : 0;
+    box-sizing : border-box;
+    font-family: 'Roboto Serif', serif;;
+}
+header{
+    display : flex;
+    color : white;
+    background-color: #252525;
+    justify-content: space-between;
+    position : fixed;
+    width: 100%;
+}
+img{
+    width : 30px;
+    margin : 1rem;
+}
+.ajuste{
+    display : flex;
+    height: 2rem;
+    align-items : center;
+    padding-top : 2rem;
+}
+
+/*
+header h2{
+    padding-right : 80%;
+}
+.logo{
+    border-radius : 50%;
+}
+*/
+
+/* Main parte I*/
+.parteI{
+    background-image:url(images/Grupo\ 486.png);
+    height : 120vh;
+    background-repeat : no-repeat ;
+    background-position: center;
+    background-size : cover;
+    display : flex;
+    justify-content: center;
+    flex-direction: column-reverse;
+    align-items:center;
+}
+section img{
+    width: 5rem;
+    height: 5rem;
+    position : relative ;
+    bottom : 10rem;
+}
+.pI{
+    color : white;
+    font-size : 4.5rem;
+    width:45%;
+    text-align: center;
+    position : relative;
+    bottom : 12rem;
+    font-weight: bold;
+}
+
+/*parte II da main*/
+.parteII{
+    background-image: url(images/Interseção\ 16.png);
+    height : 150vh;
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position: center;
+    display : flex;
+    font-size : 2rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#ajuste{
+    width : 20rem;
+    font-size : 1.5rem;
+
+}
+#ajuste, #meio, button{
+    margin-left : 60px;
+    text-align  :left;
+}
+#meio{
+    font-style: bold;
+}
+button{
+    background-color : black;
+    color : white;
+    width : 15rem;
+    border-radius : 44px;
+    height: 5rem;
+    font-size : 2rem;
+    padding-left: 2.5rem;
+    margin-top : 1rem
+    
+}
+
+
+/* Ajustes da penúltima main*/
+.penultima{
+    background-image : url(images/Grupo\ 480.png);
+    display: flex;
+    height: 150vh;
+    background-repeat : no-repeat;
+    background-size : cover;
+    background-position: center;
+    flex-direction: column;
+    padding-left : 50rem;
+    padding-top: 25rem;
+    /*justify-content :;*/
+}
+.ajustar_penul{
+    width : 40rem;
+    font-size: 3rem;
+    color : white;
+}
+.button_inverso{
+    background-color : white;
+    color : black;
+
+}
+
+.ultima{
+    width : 100%;
+    font-size : 2rem;
+    display : flex;
+    color : #FD6A9A;
+    justify-content: space-around;
+    /*justify-content: center;*/
+    align-items: center;
+}
+#apoio{
+    margin-left : 20rem;
+}
+.img_ultima{
+    width: 8rem;
+    height: 2rem;
+    position : relative;
+    top : 1px;
+}
+
+
+
+/* Footer*/
+footer{
+    display : flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+    background-color : #EB4A7B;
+    color : white;
+    width: 100%;
+    height : 16rem;
+}
+nav h2{
+    font-size: 2rem; 
+}
+footer nav{
+    margin-top : 5rem;  
+}
+li{
+    list-style: none;
+}
+.footer_mobile{
+    display : none;
+}
+
+/* responsividade*/
+@media screen and (max-width : 500px){
+
+    header{
+        display : flex;
+        position : fixed;
+        height: 10rem;
+        font-size : 1.5rem;
+        align-items: center;
+    }
+    div img{
+        width : 10vw;
+    }
+    logo{
+        width : 15vw;    
+    }
+   
+    .ajuste_header{
+        display:none;
+    }
+    .parteI{
+        background-image : url(images/Grupo\ 485.png);
+        width : 100%;
+        background-repeat: no-repeat;
+        background-size : 100% 100vh;
+    }
+    .pI{
+        width: 100%;  
+        font-size: 2rem;
+        position: relative;
+        margin-top : 6rem;
+    }
+    section img{
+        position: relative;
+        bottom : 10rem;
+    }
+    .parteII{
+        background-image: url(images/Grupo\ 484.png);
+        background-repeat : no-repeat;
+        background-size : 100% 100vh;
+        display : flex;
+        height: 150vh;
+        background-size: cover;
+        
+    }
+    #ajuste, #meio, button{
+        position : relative;
+        bottom : 15rem;
+    }
+    
+    .penultima{
+        background-image: url(images/Grupo\ 496.png);
+        background-size : 100% 100vh;
+        background-position: center;
+        display : flex;
+        justify-content: flex;
+    }
+    /* Falha
+    .ajustar_penul{
+        color : black;
+        padding-left : 0;
+        padding-top: 0;
+    }
+    */
+    .ultima{
+        display : flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    #apoio{
+        margin-left : 2rem;
+    }
+    footer{
+        display : flex;
+        flex-direction : column;
+        height: 50rem;
+        align-items: center;
+    }
+    .footer_mobile{
+        display : flex;
+        flex-direction: column;
+    }
+    #logo_nova{
+        width: 15rem;
+        height: 5rem;
+    }
+    .sociais_mobile{
+        display : flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+}
+
